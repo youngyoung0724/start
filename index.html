@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹 게임 만들기</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/09743b710b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 노래삽입 -->
+    <!-- <iframe src="" allow="autoplay" id="audio" ></iframe> -->
+    <div id="music">
+        <audio controls loop src="./audio/포켓몬스터 모험의 시작.mp3"></audio>
+    </div>
+
+    <div id="no-mobile">
+        <p>화면 크기를 줄이면 게임이 시작됩니다.</p>
+    </div>
+
+    <!-- 게임시작 -->
+    <section id="game">
+        <!-- <div id="game_inner"> -->
+        <div class="game_start">
+            <input type="text" placeholder="캐릭터의 이름을 입력해주세요.">
+            <button class="start" onclick="start();">게임 시작하기</button>
+        </div>
+        <div class="play">
+            <!-- <p>캐릭터의 이름은 <span class="character"></span> 입니다.</p>
+            <p><span class="character_name"></span> 가 여행을 떠납니다.</p> -->
+            <p class="play_02"></p>
+            <img class="picka" src="" alt="">
+            <p class="play_03">야생의 포켓몬을 만났습니다.</p>
+            <img class="monester" src="" alt="">
+            <p class="travel travel_punch">
+                <img class="punch_img" src="" alt="">
+            </p>
+            <p class="travel travel_defense"></p>
+            <p class="travel travel_recovery"></p>
+            <p class="travel travel_done"></p>
+            <div class="buttons">
+                <!-- <div class="btns"> -->
+                    <button onclick="punch();" class="btn punch">공격하기</button>
+                    <button onclick="defense();" class="btn defense">방어하기</button>
+                    <button onclick="recovery();" class="btn recovery">회복하기</button>
+                    <button onclick="done();" class="btn done">게임 끝내기</button>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- </div> -->
+    </section>
+
+
+<script src="./js/script.js"></script>
+</body>
+</html>
